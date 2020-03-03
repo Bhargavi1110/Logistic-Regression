@@ -14,6 +14,8 @@ x8 = data$Age
 
 logreg = glm(y ~ x1+x2+x3+x4+x5+x6+x7+x8, family = binomial(link = "logit"))
 t = summary(logreg)
+print("The logistic regression equation is given as: ")
+print("y = -8.404 + (0.123*x1) + (0.035*x2) + (-0.013*x3) + (0.0006*x4) + (-0.0011*x5) + (0.089*x6) + (0.9451*x7) + (0.01486*x8)")
 #t$coefficients
 #t$coefficients[1]
 
